@@ -1,0 +1,9 @@
+setuptools
+wheel
+flake8
+mypy
+pytest
+pytest-cov
+pytest-qt
+tox
+autopep8
