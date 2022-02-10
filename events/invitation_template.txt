@@ -1,0 +1,9 @@
+Welcome to the Python Club
+
+On {date}
+ {presenter} introduces the topic: {topic}
+
+Come to meet likeminded people together with a free discussion.
+
+Join Zoom Meeting
+{zoom_link}
