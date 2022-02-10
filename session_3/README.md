@@ -5,6 +5,8 @@ both manual and automatic testing/linting.
 
 You can use this as a base for your projects.
 
+![Tests](https://github.com/<username>/<repository>/actions/workflows/tests.yml/badge.svg)
+
 ## Installation
 
 What this package does is not really relevant. However, if you still wish to

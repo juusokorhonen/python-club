@@ -5,9 +5,9 @@ from epps.cli import do_nothing, process_get
 
 def test_nothing():
     bogus_args = argparse.Namespace()
-    return_code =  do_nothing(bogus_args)
+    return_code = do_nothing(bogus_args)
     assert isinstance(return_code, int)
-    assert return_code == 1
+    assert return_code == 0
 
 
 def test_running_tests():
