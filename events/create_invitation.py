@@ -24,7 +24,7 @@ def main() -> int:
     parser.add_argument("--template", type=str, default=template)
     args = parser.parse_args()
 
-    parsed_date = parse(args.date, settings={'TIMEZONE': timezone_id})
+    parsed_date = parse(args.date, settings={'TIMEZONE': timezone_id, 'DATE_ORDER': 'DMY'}, languages=['fi', 'en'])
     #print(f"Original date: {args.date}")
     #print("  Parsed date: {}".format(parsed_date.strftime("%a %b %-d, %Y at %H:%M")))
 
@@ -65,7 +65,7 @@ def main() -> int:
     print(ical_str)
     print("\n#### CAL.ICS ENDS ####\n")
 
-    ical_filename = Path(parsed_date.strftime("Python_Club_%Y%M%d_%H%M.ics"))
+    ical_filename = Path(parsed_date.strftime("Python_Club_%Y%m%d_%H%M.ics"))
     if ical_filename.is_file():
         print(f"ERROR: File {ical_filename} already exists. Refusing to overwrite.")
         sys.exit(-1)
